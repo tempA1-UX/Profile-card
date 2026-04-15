@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Profile Card</title>
+
+</head>
+<body>
+
+<article data-testid="test-profile-card">
+
+  <div class="container">
+
+    <!-- AVATAR -->
+    <figure>
+      <img 
+        id="avatar"
+        src="https://via.placeholder.com/120"
+        alt="User profile picture"
+        data-testid="test-user-avatar"
+      >
+      <div class="upload-btn">Change photo</div>
+      <input type="file" id="upload" accept="image/*" hidden>
+    </figure>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+      <header>
+        <h2 data-testid="test-user-name">Temp❄️</h2>
+      </header>
+
+      <p data-testid="test-user-bio">
+        Frontend developer focused on building clean, accessible, and interactive user interfaces.
+      </p>
+
+      <p id="time" data-testid="test-user-time" aria-live="polite"></p>
+
+      <!-- SOCIAL -->
+      <nav data-testid="test-user-social-links">
+        <ul>
+          <li>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+               data-testid="test-user-social-twitter">Twitter</a>
+          </li>
+          <li>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+               data-testid="test-user-social-github">GitHub</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- HOBBIES -->
+      <section>
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Coding</li>
+          <li>Designing</li>
+          <li>Gaming</li>
+        </ul>
+      </section>
+
+      <!-- DISLIKES -->
+      <section>
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Slow internet</li>
+          <li>Oats</li>
+          <li>lagging</li>
+        </ul>
+      </section>
+
+    </div>
+
+  </div>
+
+</article>
+
+<script src="script.js"></script>
+
+</body>
+</html>
