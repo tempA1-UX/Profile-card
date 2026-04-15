@@ -18,6 +18,6 @@ upload.addEventListener("change", () => {
     reader.onload = () => {
       avatar.src = reader.result;
     };
-    reader.readAsDataURL(file);
+    profileImage.src = uploadedImageUrl;
   }
 });
